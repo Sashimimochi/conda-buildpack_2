@@ -7,9 +7,9 @@ if [ -d /app/.heroku/miniconda ]; then
 fi
 
 puts-step "Preparing Python3/Miniconda Environment"
-curl -Os https://repo.continuum.io/miniconda/Miniconda3-4.1.11-Linux-x86_64.sh
-bash Miniconda3-4.1.11-Linux-x86_64.sh -p /app/.heroku/miniconda/ -b | indent
-rm -fr Miniconda3-4.1.1-Linux-x86_64.sh
+curl -Os https://repo.continuum.io/miniconda/Miniconda3-4.3.14-Linux-x86_64.sh
+bash Miniconda3-4.3.14-Linux-x86_64.sh -p /app/.heroku/miniconda/ -b | indent
+rm -fr Miniconda3-4.3.14-Linux-x86_64.sh
 
 if [ -f conda-requirements.txt ]; then
     puts-step "Installing dependencies using Conda"
